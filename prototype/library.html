@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A sample personal Chinese learning library." />
+    <title>My Chinese — Real Chinese</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">中</span><span class="brand-name">Real Chinese</span></a>
+        <div class="nav-links">
+          <a href="index.html">New</a>
+          <a class="active" href="library.html">My Chinese</a>
+          <a href="review.html">Review <span class="count">3</span></a>
+        </div>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch prototype language">中文</button>
+        <a class="button secondary mobile-nav" href="index.html">New lesson</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <div class="page-head dashboard-head">
+        <div>
+          <div class="eyebrow">Your learning memory</div>
+          <h1>My Chinese</h1>
+          <p class="muted">Everything you saved, with the original context still attached.</p>
+        </div>
+        <a class="button primary" href="index.html">Add new content</a>
+      </div>
+
+      <section class="stats-grid" aria-label="Learning overview">
+        <article class="stat-card"><div class="stat-value">12</div><div class="stat-label">Learning now</div></article>
+        <article class="stat-card"><div class="stat-value">34</div><div class="stat-label">Recognized in context</div></article>
+        <article class="stat-card"><div class="stat-value">8</div><div class="stat-label">Used actively</div></article>
+      </section>
+
+      <div class="library-grid">
+        <aside class="review-card">
+          <span class="tag">Today</span>
+          <h2 style="margin-top: 16px">Three expressions are ready to review.</h2>
+          <p>About 3 minutes. One comes from yesterday’s comment section.</p>
+          <div class="progress" aria-label="Weekly review progress"><span></span></div>
+          <a class="button" href="review.html">Start today’s review</a>
+        </aside>
+
+        <section aria-labelledby="saved-title">
+          <div class="panel-head" style="padding-right: 0; padding-left: 0">
+            <h2 id="saved-title">Recently saved</h2>
+            <span class="muted">54 total</span>
+          </div>
+          <div class="filter-row" aria-label="Filter saved items">
+            <button class="filter active">All</button><button class="filter">Comments</button><button class="filter">Videos</button><button class="filter">Slang</button><button class="filter">Active use</button>
+          </div>
+          <div class="saved-list">
+            <a class="saved-item clickable" href="result.html">
+              <div><div class="saved-word"><strong>踩雷</strong><span class="pinyin">cǎi léi</span></div><div class="muted">To try something that turns out disappointing.</div><div class="source-link">From a restaurant post · yesterday</div></div>
+              <span class="tag amber">learning</span>
+            </a>
+            <a class="saved-item clickable" href="result.html">
+              <div><div class="saved-word"><strong>拿捏</strong><span class="pinyin">ná niē</span></div><div class="muted">To handle or control something confidently.</div><div class="source-link">From a top comment · yesterday</div></div>
+              <span class="tag blue">recognized</span>
+            </a>
+            <a class="saved-item clickable" href="result.html">
+              <div><div class="saved-word"><strong>一言难尽</strong><span class="pinyin">yī yán nán jìn</span></div><div class="muted">Too complicated or awkward to explain briefly.</div><div class="source-link">From a top comment · yesterday</div></div>
+              <span class="tag green">active use</span>
+            </a>
+            <a class="saved-item clickable" href="result.html">
+              <div><div class="saved-word"><strong>上头</strong><span class="pinyin">shàng tóu</span></div><div class="muted">To become intensely excited, absorbed or emotionally carried away.</div><div class="source-link">From a drama clip · 4 days ago</div></div>
+              <span class="tag blue">recognized</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js?v=4"></script>
+  </body>
+</html>

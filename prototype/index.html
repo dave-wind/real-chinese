@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Turn real Chinese posts, screenshots and comments into personal lessons." />
+    <title>Real Chinese — Learn from what you scroll</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">中</span>
+          <span class="brand-name">Real Chinese</span>
+        </a>
+        <div class="nav-links">
+          <a class="active" href="index.html">New</a>
+          <a href="library.html">My Chinese</a>
+          <a href="review.html">Review <span class="count">3</span></a>
+          <a href="#how-it-works">How it works</a>
+        </div>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch prototype language">中文</button>
+        <a class="button secondary mobile-nav" href="library.html">My Chinese</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero shell">
+        <div class="eyebrow">Learn from real Chinese</div>
+        <h1>Turn the Chinese you scroll into Chinese you can use.</h1>
+        <p class="lead">Paste a post, comment, screenshot or clip. Get the meaning, the context, and the three expressions worth learning next.</p>
+
+        <div class="input-card">
+          <label for="content-input">Paste Chinese content</label>
+          <textarea id="content-input" placeholder="Paste a Chinese sentence, post, comment or link here…"></textarea>
+          <div class="input-actions">
+            <div class="row">
+              <button class="secondary" type="button" data-toast="Screenshot upload is mocked in this prototype">Upload screenshot</button>
+              <button class="secondary" type="button" data-example>Try an example</button>
+            </div>
+            <button class="primary" type="button" data-analyze>Explain it</button>
+          </div>
+        </div>
+
+        <div class="format-list" aria-label="Supported content types">
+          <span>Text</span><span>Screenshot</span><span>Video</span><span>Post</span><span>Comments</span>
+        </div>
+      </section>
+
+      <section class="section shell" id="how-it-works">
+        <div class="section-head">
+          <div class="eyebrow">One simple loop</div>
+          <h2>Not every unknown word deserves your attention.</h2>
+          <p>Real Chinese finds the few expressions that unlock the content and fit what you are ready to learn.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-number">1</div>
+            <h3>Understand the moment</h3>
+            <p class="muted">Translate the post and its comments together, including tone, slang and cultural context.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-number">2</div>
+            <h3>Pick the right three</h3>
+            <p class="muted">Skip the overwhelming word list. Learn only what is useful for your level and interests.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-number">3</div>
+            <h3>Meet it again</h3>
+            <p class="muted">Save the expression, review it later and use it in a short real-life conversation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell">
+        <div class="demo-strip">
+          <div class="demo-source">
+            <span class="tag green">Original post</span>
+            <blockquote>这家店网上看着挺火，结果我去了一次，算是精准踩雷了。</blockquote>
+            <div class="demo-comment">
+              <strong>Top comment</strong><br />老板太会拿捏流量了，实物真的一言难尽。
+            </div>
+          </div>
+          <div class="demo-result">
+            <span class="tag amber">3 things worth learning</span>
+            <div class="word-list" style="margin-top: 18px">
+              <div class="word-row"><strong>踩雷</strong><span>To have a disappointing experience after choosing something that looked promising.</span></div>
+              <div class="word-row"><strong>拿捏</strong><span>To understand and control something very effectively; often playful online slang.</span></div>
+              <div class="word-row"><strong>一言难尽</strong><span>“It is hard to even describe”—usually because the situation is complicated or bad.</span></div>
+            </div>
+            <a class="button primary" href="result.html" style="margin-top: 18px">Open full lesson</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-row shell">
+        <span>Real Chinese prototype</span>
+        <span>Content → Context → Memory → Use</span>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js?v=4"></script>
+  </body>
+</html>
